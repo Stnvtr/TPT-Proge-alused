@@ -5,7 +5,7 @@ Esimene arv: 25  Teine arv: 38
 **Eeldatav väljund:**  
 Antud arvude summa on 63  
 
-# minu lahendus
+**Minu lahendus:**
 var a = +prompt('Sisesta esimene number..');
 var b = +prompt('Sisesta teine number..');
 alert ("Nende kahe summa on" + " " + (a + b));
@@ -21,7 +21,7 @@ Kirjuta funktsioon mis võtab sisendiks numbritega massiivi ja liidab kõik arvu
 17  
 
 
-# minu lahendus
+**Minu lahendus:**
 const array = [3,6,9,12,15,18,21]
 const sum = array.reduce((accumulator, value) => {
   return accumulator + value;
@@ -40,7 +40,7 @@ Numbritel pole piirangut, sisestada võib kui palju tahes arve.
 **Eeldatav väljund:**  
 47  
 
-# minu lahendus 
+**Minu lahendus:** 
 const string = '3 6 9 12 15 18 21'
 const sumStringNumbers = (str = '') => {
    const findSum = (arr = []) => {
