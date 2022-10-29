@@ -56,7 +56,7 @@ const sumStringNumbers = (str = '') => {
 };  
 console.log(sumStringNumbers(string));  
 
-# Paaritute arvude summa - string/array
+# 4. Paaritute arvude summa - string/array
 Kirjuta programm mis loeb sisendiks tühikuga eraldatud numbrite stringi ja liidab kokku ainult paaritud arvud.  
 **Näidis sisend:**  
 3 4 12 7 15 6  
@@ -98,7 +98,7 @@ console.log(toDaysMinutesSeconds(565)); // 👉️ 9 minutes, 25 seconds
 console.log(toDaysMinutesSeconds(2073600)); // 👉️ 24 days  
 console.log(toDaysMinutesSeconds(703800)); // 👉️ 8 days, 3 hours, 30 minutes  
 
-# Aega möödunud
+# 6. Aega möödunud
 Kirjuta funktsioon mis võtab sisendiks sekundid ja ütleb kui palju sellest ajast praeguseks möödunud on sekundites, minutites, tundides ja päevades.  
 **Näidis sisend:**  
 7582  
