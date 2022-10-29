@@ -126,23 +126,23 @@ Boonus ülesanne
 Nüüd leidke, kas kõik stringis esinevad tähed ilmuvad sama arv kordi. Kõik stringid on väikeste tähtedega. Ärge unustage tühja stringi ("") kontrollida!
 
 **Minu lahendus:**
-function KasOnTasakaalus (muutuja){
-  let same_muutuja = 0;
-  for(let i = 0; i < muutuja.length; i++){
-    if(muutuja[0] == muutuja[i]){
-      same_muutuja++;
-    }
-  }
-  if (same_muutuja == muutuja.length){
-    return true;
-  }
-  else {
-    return false;
-  }
-}
+function KasOnTasakaalus (muutuja){  
+  let same_muutuja = 0;  
+  for(let i = 0; i < muutuja.length; i++){  
+    if(muutuja[0] == muutuja[i]){  
+      same_muutuja++;  
+    }  
+  }  
+  if (same_muutuja == muutuja.length){  
+    return true;  
+  }  
+  else {  
+    return false;  
+  }  
+}  
 
-muutuja ('xxxxyyyy')
-muutuja ('xyxyx')
+muutuja ('xxxxyyyy')  
+muutuja ('xyxyx')  
 
 
 # 7.1 PerfectlyBalancedBoonus
