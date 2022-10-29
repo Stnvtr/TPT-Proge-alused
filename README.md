@@ -63,7 +63,7 @@ Kirjuta programm mis loeb sisendiks tühikuga eraldatud numbrite stringi ja liid
 **Eeldatav väljund:**  
 25  
 
-# Sekundit teisendatult
+# 5. Sekundit teisendatult
 Kirjuta funktsioon mis võtab sisendiks sekundid ja teisendab palju see teeb minutites, tundides ja päevades.  
 Tulemuse ümardame täisarvuks allapoole ehk 10,6 --> 10 mitte 11  
 **Näidis sisend:**  
@@ -107,3 +107,53 @@ Kirjuta funktsioon mis võtab sisendiks sekundid ja ütleb kui palju sellest aja
 2 tundi  
 6 minutit  
 22 sekundit  
+
+
+# 7. PerfectlyBalanced
+
+Source (in english): https://www.reddit.com/r/dailyprogrammer/comments/afxxca/20190114_challenge_372_easy_perfectly_balanced/
+
+Kirjuta funktsioon mis tuvastab kas stringis on võrdne arv x ja y sümboleid. Kui on võrdselt tagastab true, kui ei ole võrdselt tagastab false.
+
+balanced("xxxyyy") => true
+balanced("yyyxxx") => true
+balanced("xxxyyyy") => false
+balanced("yyxyxxyxxyyyyxxxyxyx") => true
+balanced("xyxxxxyyyxyxxyxxyy") => false
+balanced("") => true
+balanced("x") => false
+Boonus ülesanne
+Nüüd leidke, kas kõik stringis esinevad tähed ilmuvad sama arv kordi. Kõik stringid on väikeste tähtedega. Ärge unustage tühja stringi ("") kontrollida!
+
+**Minu lahendus:**
+function KasOnTasakaalus (muutuja){
+  let same_muutuja = 0;
+  for(let i = 0; i < muutuja.length; i++){
+    if(muutuja[0] == muutuja[i]){
+      same_muutuja++;
+    }
+  }
+  if (same_muutuja == muutuja.length){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+muutuja ('xxxxyyyy')
+muutuja ('xyxyx')
+
+
+# 7.1 PerfectlyBalancedBoonus
+
+balanced_bonus("xxxyyyzzz") => true
+balanced_bonus("abccbaabccba") => true
+balanced_bonus("xxxyyyzzzz") => false
+balanced_bonus("abcdefghijklmnopqrstuvwxyz") => true
+balanced_bonus("pqq") => false
+balanced_bonus("fdedfdeffeddefeeeefddf") => false
+balanced_bonus("www") => true
+balanced_bonus("x") => true
+balanced_bonus("") => true
+Pane tähele, et funktsioon balanced_bonus töötab ühe täheliste sisendite korral natuke teistmoodi kui balanced funktsioon. Näiteks "x" sisendi korral.
