@@ -13,7 +13,7 @@ alert ("Nende kahe summa on" + " " + (a + b));
 
 
 
-# 2. Arvude summa - array
+# 2. Arvude summa - array  
 Kirjuta funktsioon mis võtab sisendiks numbritega massiivi ja liidab kõik arvud kokku.  
 **Näidis sisend:**  
 [7, 2, 8]  
@@ -32,7 +32,7 @@ console.log(sum);
 
 
 
-# 3. Arvude summa - string
+# 3. Arvude summa - string  
 Kirjuta programm mis võtab sisendiks tühikutega eraldatud numbrite stringi ja liidab kõik arvud kokku.  
 Numbritel pole piirangut, sisestada võib kui palju tahes arve.  
 **Näidis sisend:**  
@@ -56,14 +56,14 @@ const sumStringNumbers = (str = '') => {
 };  
 console.log(sumStringNumbers(string));  
 
-# 4. Paaritute arvude summa - string/array
+# 4. Paaritute arvude summa - string/array  
 Kirjuta programm mis loeb sisendiks tühikuga eraldatud numbrite stringi ja liidab kokku ainult paaritud arvud.  
 **Näidis sisend:**  
 3 4 12 7 15 6  
 **Eeldatav väljund:**  
 25  
 
-# 5. Sekundit teisendatult
+# 5. Sekundit teisendatult  
 Kirjuta funktsioon mis võtab sisendiks sekundid ja teisendab palju see teeb minutites, tundides ja päevades.  
 Tulemuse ümardame täisarvuks allapoole ehk 10,6 --> 10 mitte 11  
 **Näidis sisend:**  
@@ -73,7 +73,7 @@ Tulemuse ümardame täisarvuks allapoole ehk 10,6 --> 10 mitte 11
 7582 sekundit on 2 tundi  
 7582 sekundit on 0 päeva  
  
-**minu lahendus:**
+**minu lahendus:**  
 function toDaysMinutesSeconds(totalSeconds) {  
   const seconds = Math.floor(totalSeconds % 60);  
   const minutes = Math.floor((totalSeconds % 3600) / 60);  
@@ -111,21 +111,21 @@ Kirjuta funktsioon mis võtab sisendiks sekundid ja ütleb kui palju sellest aja
 
 # 7. PerfectlyBalanced
 
-Source (in english): https://www.reddit.com/r/dailyprogrammer/comments/afxxca/20190114_challenge_372_easy_perfectly_balanced/
+Source (in english): https://www.reddit.com/r/dailyprogrammer/comments/afxxca/20190114_challenge_372_easy_perfectly_balanced/  
 
-Kirjuta funktsioon mis tuvastab kas stringis on võrdne arv x ja y sümboleid. Kui on võrdselt tagastab true, kui ei ole võrdselt tagastab false.
+Kirjuta funktsioon mis tuvastab kas stringis on võrdne arv x ja y sümboleid. Kui on võrdselt tagastab true, kui ei ole võrdselt tagastab false.  
 
-balanced("xxxyyy") => true
-balanced("yyyxxx") => true
-balanced("xxxyyyy") => false
-balanced("yyxyxxyxxyyyyxxxyxyx") => true
-balanced("xyxxxxyyyxyxxyxxyy") => false
-balanced("") => true
-balanced("x") => false
-Boonus ülesanne
-Nüüd leidke, kas kõik stringis esinevad tähed ilmuvad sama arv kordi. Kõik stringid on väikeste tähtedega. Ärge unustage tühja stringi ("") kontrollida!
+balanced("xxxyyy") => true  
+balanced("yyyxxx") => true  
+balanced("xxxyyyy") => false  
+balanced("yyxyxxyxxyyyyxxxyxyx") => true  
+balanced("xyxxxxyyyxyxxyxxyy") => false  
+balanced("") => true  
+balanced("x") => false  
+Boonus ülesanne  
+Nüüd leidke, kas kõik stringis esinevad tähed ilmuvad sama arv kordi. Kõik stringid on väikeste tähtedega. Ärge unustage tühja stringi ("") kontrollida!  
 
-**Minu lahendus:**
+**Minu lahendus:**  
 function KasOnTasakaalus (muutuja){  
   let same_muutuja = 0;  
   for(let i = 0; i < muutuja.length; i++){  
@@ -145,15 +145,15 @@ muutuja ('xxxxyyyy')
 muutuja ('xyxyx')  
 
 
-# 7.1 PerfectlyBalancedBoonus
+# 7.1 PerfectlyBalancedBoonus  
 
-balanced_bonus("xxxyyyzzz") => true
-balanced_bonus("abccbaabccba") => true
-balanced_bonus("xxxyyyzzzz") => false
-balanced_bonus("abcdefghijklmnopqrstuvwxyz") => true
-balanced_bonus("pqq") => false
-balanced_bonus("fdedfdeffeddefeeeefddf") => false
-balanced_bonus("www") => true
-balanced_bonus("x") => true
-balanced_bonus("") => true
-Pane tähele, et funktsioon balanced_bonus töötab ühe täheliste sisendite korral natuke teistmoodi kui balanced funktsioon. Näiteks "x" sisendi korral.
+balanced_bonus("xxxyyyzzz") => true  
+balanced_bonus("abccbaabccba") => true  
+balanced_bonus("xxxyyyzzzz") => false  
+balanced_bonus("abcdefghijklmnopqrstuvwxyz") => true  
+balanced_bonus("pqq") => false  
+balanced_bonus("fdedfdeffeddefeeeefddf") => false  
+balanced_bonus("www") => true  
+balanced_bonus("x") => true  
+balanced_bonus("") => true  
+Pane tähele, et funktsioon balanced_bonus töötab ühe täheliste sisendite korral natuke teistmoodi kui balanced funktsioon. Näiteks "x" sisendi korral.  
