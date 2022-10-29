@@ -32,13 +32,29 @@ console.log(sum);
 
 
 
-# Arvude summa - string
+# 3. Arvude summa - string
 Kirjuta programm mis võtab sisendiks tühikutega eraldatud numbrite stringi ja liidab kõik arvud kokku.  
 Numbritel pole piirangut, sisestada võib kui palju tahes arve.  
 **Näidis sisend:**  
 3 4 12 7 15 6  
 **Eeldatav väljund:**  
 47  
+
+# minu lahendus 
+const string = '3 6 9 12 15 18 21'
+const sumStringNumbers = (str = '') => {
+   const findSum = (arr = []) => {
+      const sum = arr.reduce((acc, val) => acc + val);
+      return sum;
+   };
+   let sum = 0;
+   const arr = string
+      .split(' ')
+      .map(Number);
+   sum = findSum(arr);
+   return sum;
+};
+console.log(sumStringNumbers(string));
 
 # Paaritute arvude summa - string/array
 Kirjuta programm mis loeb sisendiks tühikuga eraldatud numbrite stringi ja liidab kokku ainult paaritud arvud.  
