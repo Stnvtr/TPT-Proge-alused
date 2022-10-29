@@ -1,11 +1,9 @@
-# Summa funktsioon
+# 1. Summa funktsioon
 Kirjuta programm mis küsib kasutajalt kahte arvu ja liidab need kokku.  
 **Näidis sisend:**  
-Esimene arv: 25  
-Teine arv: 38  
+Esimene arv: 25  Teine arv: 38  
 **Eeldatav väljund:**  
 Antud arvude summa on 63  
-
 
 var a = +prompt('Sisesta esimene number..');
 var b = +prompt('Sisesta teine number..');
@@ -14,9 +12,7 @@ alert ("Nende kahe summa on" + " " + (a + b));
 
 
 
-
-
-# Arvude summa - array
+# 2. Arvude summa - array
 Kirjuta funktsioon mis võtab sisendiks numbritega massiivi ja liidab kõik arvud kokku.  
 **Näidis sisend:**  
 [7, 2, 8]  
@@ -34,8 +30,6 @@ console.log(sum);
 
 
 
-
- 
 # Arvude summa - string
 Kirjuta programm mis võtab sisendiks tühikutega eraldatud numbrite stringi ja liidab kõik arvud kokku.  
 Numbritel pole piirangut, sisestada võib kui palju tahes arve.  
